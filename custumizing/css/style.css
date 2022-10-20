@@ -1,0 +1,96 @@
+@charset "UTF-8";
+html {
+  font-family: "Open Sans";
+  font-size: 100%;
+}
+
+body {
+  color: #555;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+}
+
+.logo {
+  width: 60px;
+  height: 40px;
+  margin: 0 30px;
+  padding: 15px 0;
+}
+
+.nav-style {
+  display: flex;
+}
+
+nav li {
+  color: #fff;
+  padding: 30px 30px 30px;
+  text-align: center;
+  list-style: none;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.area:nth-child(1) {
+  background-color: blue;
+  color: #f1f1f1;
+}
+
+.area:nth-child(2) {
+  background-color: blueviolet;
+  color: #aaa;
+}
+
+.area:nth-child(3) {
+  background-color: orange;
+  color: #444;
+}
+
+.area:nth-child(4) {
+  background-color: navy;
+  color: yellow;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}/*# sourceMappingURL=style.css.map */
